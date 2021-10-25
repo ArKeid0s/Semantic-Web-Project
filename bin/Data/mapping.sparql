@@ -1,0 +1,51 @@
+PREFIX ex: <http://example.org/a#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos>
+
+CONSTRUCT {
+  ?URI a ex:AccidentsVelo;
+    ex:identifiantAccident ?id;
+    ex:date ?Date;
+    ex:departement ?Departement;
+    ex:heure ?Heure;
+    dbo:inseeCode ?inseecode;
+    geo:lat ?Latitude;
+    geo:long ?Longitude;
+    ex:luminosite ?Luminosite;
+    ex:graviteAccident ?GraviteAccident;
+    ex:sexe ?Sexe;
+    ex:age ?Age;
+    ex:motifDeplacement ?MotifDeplacement;
+    ex:existenceSecurite ?ExistenceSecurite;
+    ex:usageSecurite ?UsageSecurite;
+    ex:enAgglomeration ?EnAgglomeration;
+    ex:mois ?Mois;
+    ex:jour ?Jour;
+    ex:NCCENR ?nomVille;
+
+} 
+FROM <file:accidents-velos2.csv> 
+WHERE {
+  BIND (URI(CONCAT('http://example.org/accidents', ?identifiantAccident)) AS ?URI)
+  BIND (xsd:integer(?identifiantAccident) AS ?id)
+  BIND (xsd:string(?date) AS ?Date)
+  BIND (xsd:integer(?departement) AS ?Departement)
+  BIND (xsd:integer(?heure) AS ?Heure)
+  BIND (xsd:integer(?commune) AS ?inseecode)
+  BIND (xsd:string(?lat) AS ?Latitude)
+  BIND (xsd:string(?lon) AS ?Longitude)
+  BIND (xsd:string(?luminosite) AS ?Luminosite)
+  BIND (xsd:integer(?graviteAccident) AS ?GraviteAccident)
+  BIND (xsd:string(?sexe) AS ?Sexe)
+  BIND (xsd:string(?age) AS ?Age)
+  BIND (xsd:string(?motifDeplacement) AS ?MotifDeplacement)
+  BIND (xsd:string(?existenceSecurite) AS ?ExistenceSecurite)
+  BIND (xsd:string(?usageSecurite) AS ?UsageSecurite)
+  BIND (xsd:string(?enAgglomeration) AS ?EnAgglomeration)
+  BIND (xsd:string(?mois) AS ?Mois)
+  BIND (xsd:string(?jour) AS ?Jour)
+  BIND (xsd:string(?NCCENR) AS ?nomVille)
+
+
+}
