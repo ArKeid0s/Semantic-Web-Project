@@ -1,0 +1,38 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX lgdo: <http://linkedgeodata.org/ontology/>
+PREFIX exbis: <http://ex.org/#>
+PREFIX ex: <http://example.org/a#>
+
+
+SELECT ?nomVille ?popTotale ?percentage
+WHERE {
+    #Notre graphe
+    {
+        ?a rdf:type ex:AccidentsVelo;
+        ex:graviteAccident ?GraviteAccident;
+        dbo:inseeCode ?inseecode;
+        ex:NCCENR ?nomVille.
+        filter (?GraviteAccident = 3 || ?GraviteAccident = 2 || ?inseeCode = 44000)
+    }
+
+    #Graphe du groupe 6
+    GRAPH <http://www.ex.org/dataGrp6>
+    {
+        ?donneeGrp6 dbo:inseeCode ?codeInsee;
+        lgdo:Telecommunication ?technologie . 
+        FILTER (?technologie = "Fibre FttH" && ?pourcentage > 33) .
+        OPTIONAL{?donneeGrp6 dbo:percentage ?pourcentage} . 
+    }
+
+    #Graphe du groupe 10
+    GRAPH <http://www.ex.org/dataGrp10>
+    {
+    ?donneeGrp10 dbo:Name ?nomVille;
+    ex:totalPopulation ?popTotale;
+    ex:region ?region;
+    }
+}
+
+ORDER BY DESC(?popTotale)
+LIMIT 20
