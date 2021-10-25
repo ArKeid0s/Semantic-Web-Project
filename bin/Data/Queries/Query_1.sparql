@@ -1,0 +1,13 @@
+SELECT ?age ?nomVille ?ExistenceSecurite ?UsageSecurite ?Date
+WHERE {
+  ?a rdf:type ex:AccidentsVelo;
+    ex:NCCENR ?nomVille;
+    ex:existenceSecurite ?ExistenceSecurite;
+        ex:date ?Date;
+
+    ex:usageSecurite ?UsageSecurite;
+    ex:graviteAccident ?GraviteAccident;
+      ex:age ?age.
+      filter(?age < "17-18" && ?UsageSecurite != "Oui" && ?GraviteAccident = 3)
+}
+order by ?age

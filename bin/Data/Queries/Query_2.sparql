@@ -1,0 +1,14 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.org/a#>
+PREFIX dbo: <http://dbpedia.org/ontology/>
+
+
+SELECT ?nomVille (count(?nomVille) as ?count)
+WHERE {
+  ?a rdf:type ex:AccidentsVelo;
+    ex:graviteAccident ?GraviteAccident;
+    ex:NCCENR ?nomVille.
+  filter (?GraviteAccident = 3 || ?GraviteAccident = 2)
+}
+group by ?nomVille
+order by desc (?count)
