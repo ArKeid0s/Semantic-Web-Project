@@ -1,38 +1,33 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://www.ex.org/#>
+prefix dbpedia-owl: <http://dbpedia.org/ontology/> 
+prefix : <https://fuseki.alma.mathius.fr/fibre#> 
+
 PREFIX dbo: <http://dbpedia.org/ontology/>
-PREFIX lgdo: <http://linkedgeodata.org/ontology/>
-PREFIX exbis: <http://ex.org/#>
-PREFIX ex: <http://example.org/a#>
 
+SELECT ?nomVille ?totalPopulation ?pourcentageFibre (count(?nomVille) as ?nombreAccidents) 
 
-SELECT ?nomVille ?popTotale ?percentage
 WHERE {
-    #Notre graphe
-    {
-        ?a rdf:type ex:AccidentsVelo;
-        ex:graviteAccident ?GraviteAccident;
-        dbo:inseeCode ?inseecode;
-        ex:NCCENR ?nomVille.
-        filter (?GraviteAccident = 3 || ?GraviteAccident = 2 || ?inseeCode = 44000)
-    }
 
-    #Graphe du groupe 6
-    GRAPH <http://www.ex.org/dataGrp6>
-    {
-        ?donneeGrp6 dbo:inseeCode ?codeInsee;
-        lgdo:Telecommunication ?technologie . 
-        FILTER (?technologie = "Fibre FttH" && ?pourcentage > 33) .
-        OPTIONAL{?donneeGrp6 dbo:percentage ?pourcentage} . 
-    }
+  ?a rdf:type ex:AccidentsVelo;
+     ex:graviteAccident ?GraviteAccident;
+     dbo:inseeCode ?inseecode;
+     ex:departement ?Departement;
 
-    #Graphe du groupe 10
-    GRAPH <http://www.ex.org/dataGrp10>
-    {
-    ?donneeGrp10 dbo:Name ?nomVille;
-    ex:totalPopulation ?popTotale;
-    ex:region ?region;
-    }
-}
+     ex:NCCENR ?nomVille.
+  filter ((?GraviteAccident = 3 || ?GraviteAccident = 2) && ?Departement = 44)
 
-ORDER BY DESC(?popTotale)
-LIMIT 20
+  ?b rdf:type dbo:City;
+     dbo:Name ?name;
+     dbo:inseeCode ?inseecode;
+     ex:totalPopulation ?totalPopulation .
+
+  ?c rdf:type :network-entry;
+        dbpedia-owl:inseeCode ?inseecode;
+ 		 dbpedia-owl:percentage ?pourcentage. 
+  
+  BIND((?pourcentage * 100) AS ?pourcentageFibre) 
+
+} 
+group by ?nomVille ?totalPopulation ?pourcentageFibre
+order by desc (?nombreAccidents)
