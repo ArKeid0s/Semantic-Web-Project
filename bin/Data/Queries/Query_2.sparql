@@ -1,7 +1,6 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX ex: <http://example.org/a#>
+PREFIX ex: <http://www.ex.org/#>
 PREFIX dbo: <http://dbpedia.org/ontology/>
-
 
 SELECT ?nomVille (count(?nomVille) as ?count)
 WHERE {

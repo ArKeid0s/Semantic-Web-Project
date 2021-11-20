@@ -1,8 +1,7 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX ex: <http://www.ex.org/#>
 prefix dbpedia-owl: <http://dbpedia.org/ontology/> 
-prefix : <https://fuseki.alma.mathius.fr/fibre#> 
-
+prefix net: <https://fuseki.alma.mathius.fr/fibre#> 
 PREFIX dbo: <http://dbpedia.org/ontology/>
 
 SELECT ?nomVille ?totalPopulation ?pourcentageFibre (count(?nomVille) as ?nombreAccidents) 
@@ -12,7 +11,7 @@ WHERE {
   ?a rdf:type ex:AccidentsVelo;
      ex:graviteAccident ?GraviteAccident;
      dbo:inseeCode ?inseecode;
-     ex:departement ?Departement;
+     dbo:department ?Departement;
 
      ex:NCCENR ?nomVille.
   filter ((?GraviteAccident = 3 || ?GraviteAccident = 2) && ?Departement = 44)
@@ -22,7 +21,7 @@ WHERE {
      dbo:inseeCode ?inseecode;
      ex:totalPopulation ?totalPopulation .
 
-  ?c rdf:type :network-entry;
+  ?c rdf:type net:network-entry;
         dbpedia-owl:inseeCode ?inseecode;
  		 dbpedia-owl:percentage ?pourcentage. 
   

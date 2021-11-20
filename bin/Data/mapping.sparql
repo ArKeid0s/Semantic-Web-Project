@@ -1,4 +1,4 @@
-PREFIX ex: <http://example.org/a#>
+PREFIX ex: <http://www.ex.org/#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos>
@@ -7,21 +7,21 @@ CONSTRUCT {
   ?URI a ex:AccidentsVelo;
     ex:identifiantAccident ?id;
     ex:date ?Date;
-    ex:departement ?Departement;
+    dbo:department ?Departement;
     ex:heure ?Heure;
     dbo:inseeCode ?inseecode;
     geo:lat ?Latitude;
     geo:long ?Longitude;
     ex:luminosite ?Luminosite;
     ex:graviteAccident ?GraviteAccident;
-    ex:sexe ?Sexe;
+    dbo:sex ?Sexe;
     ex:age ?Age;
     ex:motifDeplacement ?MotifDeplacement;
     ex:existenceSecurite ?ExistenceSecurite;
     ex:usageSecurite ?UsageSecurite;
     ex:enAgglomeration ?EnAgglomeration;
-    ex:mois ?Mois;
-    ex:jour ?Jour;
+    dbo:month ?Mois;
+    dbo:day ?Jour;
     ex:NCCENR ?nomVille;
 
 } 
@@ -32,7 +32,7 @@ WHERE {
   BIND (xsd:string(?date) AS ?Date)
   BIND (xsd:integer(?departement) AS ?Departement)
   BIND (xsd:integer(?heure) AS ?Heure)
-  BIND (xsd:integer(?commune) AS ?inseecode)
+  BIND (xsd:string(?commune) AS ?inseecode)
   BIND (xsd:string(?lat) AS ?Latitude)
   BIND (xsd:string(?lon) AS ?Longitude)
   BIND (xsd:string(?luminosite) AS ?Luminosite)
