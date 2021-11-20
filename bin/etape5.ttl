@@ -1,0 +1,58 @@
+@prefix void: <http://rdfs.org/ns/void#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix wv: <http://vocab.org/waiver/terms/norms> .        
+@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
+@prefix ex: <http://www.ex.org/#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+@prefix : <#> .
+
+:RecensementPopulation  rdf:type    void:Dataset;
+                        
+                        dcterms:title           "Accidents de velo en france";
+                        dcterms:description     "Accidents de velo en france entre 2016 et 2018";
+                        dcterms:source          <https://opendata.koumoul.com/datasets/accidents-velos>;
+                        void:propertyPartition [ void:property rdf:type; ];
+                        void:propertyPartition [ void:property ex:AccidentsVelo; ];
+                        void:propertyPartition [ void:property ex:identifiantAccident; ];
+                        void:propertyPartition [ void:property ex:date; ];
+                        void:propertyPartition [ void:property dbo:department; ];
+                        void:propertyPartition [ void:property ex:heure; ];
+                        void:propertyPartition [ void:property dbo:inseeCode; ];
+                        void:propertyPartition [ void:property geo:lat; ];
+                        void:propertyPartition [ void:property geo:long; ];
+                        void:propertyPartition [ void:property ex:luminosite; ];
+                        void:propertyPartition [ void:property ex:graviteAccident; ];
+                        void:propertyPartition [ void:property dbo:sex; ];
+                        void:propertyPartition [ void:property ex:age; ];
+                        void:propertyPartition [ void:property ex:motifDeplacement; ];
+                        void:propertyPartition [ void:property ex:existenceSecurite; ];
+                        void:propertyPartition [ void:property ex:usageSecurite; ];
+                        void:propertyPartition [ void:property ex:enAgglomeration; ];
+                        void:propertyPartition [ void:property dbo:month; ];
+                        void:propertyPartition [ void:property dbo:day; ];
+                        void:propertyPartition [ void:property ex:NCCENR; ];
+                        dcterms:publisher       :Koumoul;
+                        dcterms:contributor     :Vincent;
+                        dcterms:contributor 	:Mathis;
+                        void:triples           10000;
+
+:Koumoul a foaf:Organization;
+    rdfs:label "Koumoul, la donnée accessible";
+    foaf:homepage <https://koumoul.com/en>;
+    
+
+
+:Vincent      a     foaf:Person;
+                    rdfs:label      "Vincent Malézy";
+                    foaf:mbox <mailto:vincent.malezy@etu.univ-nantes.fr> .
+
+:Mathis      a      foaf:Person;
+                    rdfs:label      "Mathis Rocher";
+                    foaf:mbox <mailto:mathis.rocher@etu.univ-nantes.fr> .
