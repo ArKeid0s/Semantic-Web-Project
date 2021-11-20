@@ -1,0 +1,311 @@
+Prefix(:=<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4>
+
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#AccidentsVelo>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#age>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#date>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#day>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#existenceSecurite>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#graviteAccident>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#heure>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#identifiantAccident>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#lat>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#long>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#luminosite>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#month>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#motifDeplacement>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#sex>))
+Declaration(Class(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#usageSecurite>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Beaulieu-sur-Loire>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Bignon>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Brindas>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Chécy>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Guérande>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Ligny-le-Ribault>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Lyon_2e__Arrondissement>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Nantes>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Neuville-sur-Saône>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Orléans>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pithiviers-le-Vieil>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pont-Saint-Martin>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Quincieux>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Saint-Martin-en-Haut>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382>))
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode>)
+
+InverseObjectProperties(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement>)
+ObjectPropertyDomain(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department>)
+ObjectPropertyRange(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>)
+
+# Object Property: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville>)
+
+InverseObjectProperties(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode>)
+ObjectPropertyDomain(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>)
+ObjectPropertyRange(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR>)
+
+# Object Property: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>)
+ObjectPropertyRange(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department>)
+
+# Object Property: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR>)
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#AccidentsVelo> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#AccidentsVelo>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR>)
+
+EquivalentClasses(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> ObjectExactCardinality(1 <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>))
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#age> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#age>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#date> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#date>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#day> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#day>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department>)
+
+EquivalentClasses(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> ObjectSomeValuesFrom(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>))
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#existenceSecurite> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#existenceSecurite>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#graviteAccident> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#graviteAccident>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#heure> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#heure>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#identifiantAccident> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#identifiantAccident>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode>)
+
+EquivalentClasses(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> ObjectExactCardinality(1 <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR>))
+EquivalentClasses(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> ObjectExactCardinality(1 <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department>))
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#lat> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#lat>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#long> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#long>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#luminosite> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#luminosite>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#month> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#month>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#motifDeplacement> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#motifDeplacement>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#sex> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#sex>)
+
+
+# Class: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#usageSecurite> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#usageSecurite>)
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Beaulieu-sur-Loire> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Beaulieu-sur-Loire>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Beaulieu-sur-Loire>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Bignon> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Bignon>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Bignon>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Brindas> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Brindas>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Brindas>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Chécy> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Chécy>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Chécy>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Guérande> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Guérande>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Guérande>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Ligny-le-Ribault> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Ligny-le-Ribault>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Ligny-le-Ribault>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Lyon_2e__Arrondissement> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Lyon_2e__Arrondissement>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Lyon_2e__Arrondissement>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Nantes> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Nantes>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Nantes>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#ville_a_un_inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Nantes> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Neuville-sur-Saône> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Neuville-sur-Saône>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Neuville-sur-Saône>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Orléans> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Orléans>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Orléans>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pithiviers-le-Vieil> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pithiviers-le-Vieil>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pithiviers-le-Vieil>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pont-Saint-Martin> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pont-Saint-Martin>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pont-Saint-Martin>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Quincieux> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Quincieux>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Quincieux>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Saint-Martin-en-Haut> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Saint-Martin-en-Haut>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Saint-Martin-en-Haut>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44014> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Bignon>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44069> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Guérande>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_est_dans_un_departement> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44109> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#44130> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pont-Saint-Martin>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45029> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Beaulieu-sur-Loire>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45089> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Chécy>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45182> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Ligny-le-Ribault>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45234> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Orléans>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#45253> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Pithiviers-le-Vieil>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#departement_possede_des__inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69028> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Brindas>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69143> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Neuville-sur-Saône>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69163> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Quincieux>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69227> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Saint-Martin-en-Haut>)
+
+# Individual: <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382> (<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382>)
+
+ClassAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode_appartient_a_une_ville> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#69382> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#Lyon_2e__Arrondissement>)
+
+
+DisjointClasses(<http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#AccidentsVelo> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#NCCENR> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#age> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#date> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#day> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#department> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#existenceSecurite> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#graviteAccident> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#heure> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#identifiantAccident> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#inseeCode> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#lat> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#long> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#luminosite> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#month> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#motifDeplacement> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#sex> <http://www.semanticweb.org/vincent/ontologies/2021/10/untitled-ontology-4#usageSecurite>)
+)
