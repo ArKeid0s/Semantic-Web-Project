@@ -7,8 +7,7 @@ CONSTRUCT {
   ?URI a ex:AccidentsVelo;
     ex:identifiantAccident ?id;
     ex:date ?Date;
-    dbo:department ?Departement;
-    ex:heure ?Heure;
+    dbo:department ?Departement; 
     dbo:inseeCode ?inseecode;
     geo:lat ?Latitude;
     geo:long ?Longitude;
@@ -30,8 +29,7 @@ WHERE {
   BIND (URI(CONCAT('http://example.org/accidents', ?identifiantAccident)) AS ?URI)
   BIND (xsd:integer(?identifiantAccident) AS ?id)
   BIND (xsd:string(?date) AS ?Date)
-  BIND (xsd:integer(?departement) AS ?Departement)
-  BIND (xsd:integer(?heure) AS ?Heure)
+  BIND (xsd:string(?departement) AS ?Departement)
   BIND (xsd:string(?commune) AS ?inseecode)
   BIND (xsd:string(?lat) AS ?Latitude)
   BIND (xsd:string(?lon) AS ?Longitude)
