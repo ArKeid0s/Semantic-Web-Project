@@ -13,7 +13,7 @@
 
 @prefix : <#> .
 
-:RecensementPopulation  rdf:type    void:Dataset;
+:AccidentsVelo  rdf:type    void:Dataset;
                         
                         dcterms:title           "Accidents de velo en france";
                         dcterms:description     "Accidents de velo en france entre 2016 et 2018";
