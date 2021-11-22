@@ -3,8 +3,9 @@ PREFIX ex: <http://www.ex.org/#>
 prefix dbpedia-owl: <http://dbpedia.org/ontology/> 
 prefix net: <https://fuseki.alma.mathius.fr/fibre#> 
 PREFIX dbo: <http://dbpedia.org/ontology/>
+PREFIX schema:  <https://schema.org/>
 
-SELECT ?nomVille ?totalPopulation ?pourcentageFibre (count(?nomVille) as ?nombreAccidents) 
+SELECT ?nomVille ?totalPopulation ?pourcentageFibre (count(?nomVille) as ?nombreAccidents) ?prenom ?nom
 
 WHERE {
 
@@ -25,8 +26,14 @@ WHERE {
         dbpedia-owl:inseeCode ?inseecode;
  		 dbpedia-owl:percentage ?pourcentage. 
   
-  BIND((?pourcentage * 100) AS ?pourcentageFibre) 
-
+  BIND((?pourcentage * 100) AS ?pourcentageFibre) .
+  
+  OPTIONAL{
+    ?d rdf:type schema:Person;
+          schema:givenName ?nom;
+          schema:firstName ?prenom;
+          schema:City         ?nomVille.
+  }
 } 
-group by ?nomVille ?totalPopulation ?pourcentageFibre
+group by ?nomVille ?totalPopulation ?pourcentageFibre ?prenom ?nom
 order by desc (?nombreAccidents)
