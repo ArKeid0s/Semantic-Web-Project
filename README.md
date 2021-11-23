@@ -1,4 +1,5 @@
 # Semantic Web Project 
+ Project created by Mathis Rocher (repository owner) and Vincent Malézy
  Project based on bicycle accidents in France, .ttl file is obtained with tarql (windows version in this repo).
 
  Presentation is on this google sheet :
